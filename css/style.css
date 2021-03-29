@@ -66,7 +66,8 @@ body {
   @media only screen and (max-width: 31.5em) {
     .search {
       order: 1;
-      flex: 0 0 100%; } }
+      flex: 0 0 100%;
+      background-color: var(--color-grey-light-2); } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -230,6 +231,9 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 2.5rem 3rem; }
+    @media only screen and (max-width: 31.5em) {
+      .overview__heading {
+        font-size: 1rem; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -240,7 +244,7 @@ body {
   .overview__icon-location {
     margin-right: .5rem; }
   .overview__location {
-    font-style: 1.2rem;
+    font-size: 1.2rem;
     display: flex;
     vertical-align: center; }
   .overview__rating {
@@ -260,6 +264,9 @@ body {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px; }
+    @media only screen and (max-width: 31.5em) {
+      .overview__rating-avarage {
+        font-size: 1rem; } }
     @media only screen and (max-width: 37.5em) {
       .overview__rating-avarage {
         font-size: .8rem; } }
@@ -463,7 +470,8 @@ body {
   @media only screen and (max-width: 31.5em) {
     .header {
       flex-wrap: wrap;
-      height: 11rem; } }
+      height: 12rem;
+      align-content: space-around; } }
 
 .content {
   display: flex; }

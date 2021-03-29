@@ -22,6 +22,8 @@
 
         order: 1;
         flex: 0 0 100%;
+        background-color: var(--color-grey-light-2);
+        
     }
 
     &__input{
@@ -31,7 +33,7 @@
         background-color: var(--color-grey-light-2);
         border: none;
         padding: .7rem 2rem;
-        border-radius: 100px;
+        border-radius: 100px; 
         width: 90%;
         transition: all .2s;
         margin-right: -3.25rem;
@@ -298,6 +300,11 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             padding: 2.5rem 3rem;
+
+            @media only screen and (max-width: $bp-smallest){
+
+                font-size: 1rem;  
+            }
         }
 
         &__stars{
@@ -317,7 +324,7 @@
         }
 
         &__location{
-            font-style: 1.2rem;
+            font-size: 1.2rem;
             display: flex;
             vertical-align: center;
             
@@ -337,12 +344,18 @@
             @media only screen and (max-width: $bp-small) {  
                 padding: 0 1.5rem;
              }
+
+             
         }
 
         &__rating-avarage{
             font-size: 2.25rem;
             font-weight: 300;
             margin-bottom: -3px; 
+
+            @media only screen and (max-width: $bp-smallest) {  
+                font-size: 1rem;
+             }
 
             @media only screen and (max-width: $bp-small) {  
                 font-size: .8rem;
